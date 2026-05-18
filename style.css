@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  body {
+    background-color: #f4f4f4;
+    color: #222;
+    transition: 0.3s;
+  }
+  
+  header {
+    background: #24292e;
+    color: white;
+    padding: 30px;
+    text-align: center;
+  }
+  
+  header p {
+    margin-top: 10px;
+  }
+  
+  #themeButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    background: #58a6ff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+  }
+  
+  .card {
+    background: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  .card h2 {
+    margin-bottom: 10px;
+    color: #24292e;
+  }
+  
+  .branch-box {
+    background: #eee;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 15px;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    background: #24292e;
+    color: white;
+    margin-top: 30px;
+  }
+  
+  /* DARK MODE */
+  
+  .dark-mode {
+    background-color: #0d1117;
+    color: #f0f6fc;
+  }
+  
+  .dark-mode .card {
+    background: #161b22;
+    color: #f0f6fc;
+  }
+  
+  .dark-mode .card h2 {
+    color: #58a6ff;
+  }
+  
+  .dark-mode .branch-box {
+    background: #30363d;
+  }
+
+  #themeButton:hover {
+    background: #1f6feb;
+    transform: scale(1.05);
+    transition: 0.2s;
+  }
