@@ -91,3 +91,116 @@
     transform: scale(1.05);
     transition: 0.2s;
   }
+ /* =========================
+   DARK MODE MODERNO
+========================= */
+
+body.dark-mode {
+    background: linear-gradient(135deg, #0f1117, #1a1f2e);
+    color: #f0f6fc;
+    transition: background 0.4s ease, color 0.4s ease;
+}
+
+/* CARD */
+.dark-mode .card {
+    background: rgba(22, 27, 34, 0.85);
+    color: #f0f6fc;
+
+    border-radius: 18px;
+    padding: 20px;
+
+    border: 1px solid rgba(255,255,255,0.08);
+
+    box-shadow:
+        0 8px 24px rgba(0,0,0,0.35);
+
+    backdrop-filter: blur(10px);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        background 0.3s ease;
+}
+
+.dark-mode .card:hover {
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 12px 30px rgba(88,166,255,0.25);
+}
+
+/* TITULO */
+
+.dark-mode .card h2 {
+    color: #58a6ff;
+    margin-bottom: 10px;
+}
+
+/* BRANCH BOX */
+
+.dark-mode .branch-box {
+    background: #30363d;
+
+    border-left: 4px solid #58a6ff;
+
+    border-radius: 12px;
+
+    padding: 12px;
+
+    transition: 0.3s ease;
+}
+
+.dark-mode .branch-box:hover {
+    background: #3b434b;
+}
+
+/* BOTAO */
+
+#themeButton {
+    border: none;
+
+    border-radius: 12px;
+
+    padding: 12px 18px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.2s ease,
+        background 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+#themeButton:hover {
+    background: #1f6feb;
+
+    transform: scale(1.05);
+
+    box-shadow:
+        0 0 18px rgba(31,111,235,0.5);
+}
+
+#themeButton:active {
+    transform: scale(0.97);
+}
+
+/* SCROLLBAR */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #161b22;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #58a6ff;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #79c0ff;
+}
